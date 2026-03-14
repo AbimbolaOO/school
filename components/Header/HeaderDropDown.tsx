@@ -24,7 +24,7 @@ const HeaderDropDown: React.FC<HeaderDropDownProps> = ({
   dropDownWidth,
 }) => {
   return (
-    <div className='group relative flex h-fit items-center text-[18px]'>
+    <div className='group relative flex h-fit items-center text-[18px] z-50'>
       <div className='flex gap-1 h-fit cursor-pointer items-center text-white'>
         {label} <ChevronDownIcon />
       </div>
