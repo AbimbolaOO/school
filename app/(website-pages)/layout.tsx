@@ -1,12 +1,18 @@
 import type { Metadata } from 'next';
 import '../globals.css';
 
-import { Manrope } from 'next/font/google';
+import { Manrope, Saira, Unna } from 'next/font/google';
 
 import Footer from '@/sections/Footer/Footer';
 import Header from '@/sections/Header/Header';
 
 const manrope = Manrope({ subsets: ['latin'] });
+const unna = Unna({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-unna',
+});
+const saira = Saira({ subsets: ['latin'], variable: '--font-saira' });
 
 export const metadata: Metadata = {
   title: 'School',
@@ -20,7 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`antialiased ${manrope.className}`}>
+      <body
+        className={`antialiased ${manrope.className} ${unna.variable} ${saira.variable}`}
+      >
         <Header />
         {children}
         <Footer />

@@ -5,7 +5,7 @@ import HeaderDropDown from '@/components/Header/HeaderDropDown';
 
 const Header = () => {
   return (
-    <header className='bg-[#080038] p-12 pt-2 pb-2 flex items-center gap-12 justify-between'>
+    <header className='bg-[#080038] p-29 pt-2 pb-2 flex items-center gap-12 justify-between sticky top-0 z-50'>
       <Link
         href='/'
         className='h-12 w-12 bg-white flex justify-center items-center cursor-pointer'
