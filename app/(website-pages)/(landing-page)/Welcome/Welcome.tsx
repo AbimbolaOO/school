@@ -21,7 +21,7 @@ const Welcome = () => {
         <h1 className='text-amber-800 text-[16px] [font-family:var(--font-saira)]'>
           Welcome to
         </h1>
-        <h2 className='text-[#080038] font-extrabold text-[52px] [font-family:var(--font-unna)]'>
+        <h2 className='text-[#080038] font-extrabold text-[32px] [font-family:var(--font-unna)]'>
           School International School
         </h2>
         <p className='text-[18px]'>
